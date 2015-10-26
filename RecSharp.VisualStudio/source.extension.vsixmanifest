@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="RecSharp.3c671332-e7aa-4898-bc7e-5c751f0b0568" Version="0.1" Language="en-US" Publisher="danslapman" />
+    <DisplayName>RecSharp </DisplayName>
+    <Description xml:space="preserve">RecSharp Visual Studio custom tool extension for record class generation</Description>
+    <MoreInfo>https://github.com/danslapman/RecSharp.VisualStudio</MoreInfo>
+    <License>copying.txt</License>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,15.0)" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
